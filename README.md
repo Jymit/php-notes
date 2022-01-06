@@ -13,9 +13,11 @@ index.php
 .
 ```
 
+```
 % php -S 127.0.0.1:8080
 PHP 7.3.29-to-be-removed-in-future-macOS Development Server started at <date time>
 Listening on http://127.0.0.1:8080
+```
 
 ```
   curl...
