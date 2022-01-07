@@ -173,7 +173,18 @@ $myfile = fopen("webdict.txt", "r");
 while(!feof($myfile)) {  echo fgetc ($myfile); }
 
 
+setcookie("username", "John", time() + (86400 * 30), "/");
+
 
 
 
 ```
+
+
+
+
+
+
+
+
+https://www.w3schools.com/
