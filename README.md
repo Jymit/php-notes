@@ -140,16 +140,37 @@ echo $fname; }
 function myFunction($fname, $lname) {  
 return $lname; }
 
-https://www.w3schools.com/php/exercise.asp?filename=exercise_arrays1
+$fruits = array("Apple", "Banana", "Orange");
+echo count($fruits);
+
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+echo "Ben is " . $age['Ben'] . " years old.";
 
 
+<form action="welcome.php" method="get">
+First name: <input type="text" name="fname">
+</form>
+<html>
+<body>
+Welcome <?php echo $_GET["fname"]; ?>
+</body>
+</html>
+
+> today
+echo date("l");
+2022.07.01
+echo date("Y.m.d");
+> time with hour as a 24-hour format
+echo date("H:i:s");
 
 
+<?php include 'footer.php' ;?>
 
+echo readfile("webdict.txt");
 
+$myfile = fopen("webdict.txt", "r");
 
-
-
+while(!feof($myfile)) {  echo fgetc ($myfile); }
 
 
 
